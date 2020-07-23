@@ -37,7 +37,7 @@ class CZIRenamer {
             }
 
             String last = CZI.getName().substring(0, 32);
-            File targetFile = new File(filepath_string + "/" + subfolderList[i].getName() + "/" + last + "-ApoTomeRAWConvert.czi");
+            File targetFile = new File(filepath_string + "/" + subfolderList[i].getName() + "/" + last + "ApoTomeRAWConvert.czi");
             CZI.renameTo(targetFile);
             System.out.println(targetFile.getName());
         }
